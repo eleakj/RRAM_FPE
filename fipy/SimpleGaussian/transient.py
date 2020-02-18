@@ -13,6 +13,7 @@ phi = CellVariable(name="solution variable",
                    value=1/L)
 
 ## Definition for scaling in time
+
 timeScaleFac = 1e6
 
 ## Definition for diffusion
@@ -70,7 +71,7 @@ for step in range(steps-1):
 ## Switch over to implicit solver using
 ## larger time steps
 timeStepDuration = 1.0e-6
-steps = 200
+steps = 50
 
 ## Loop to step through time
 for step in range(steps-1):
